@@ -6,13 +6,13 @@ int value; // variable to store value read on digital pin
 
 void setup() 
 { 
-pinMode(0, INPUT); // initialize digital pin 2 as an input 
+pinMode(2, INPUT); // initialize digital pin 2 as an input (pin D4)
 Serial.begin(9600); 
 } 
 
 void loop() 
 { 
-value = digitalRead(0); // read value on pin 2 
+value = digitalRead(2); // read value on pin 2 (pin D4)
 Serial.println(value); // print value on serial terminal 
 if(value==1)
 {
